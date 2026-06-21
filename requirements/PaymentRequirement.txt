@@ -1,0 +1,71 @@
+Online Payment Module
+
+Business Requirement:
+
+Users should be able to make payments securely using Credit Card, Debit Card, UPI, and Net Banking.
+
+Functional Requirements:
+
+1. User can proceed to payment only after adding at least one item to the shopping cart.
+
+2. System should display:
+
+   * Product Amount
+   * Taxes
+   * Discount
+   * Final Payable Amount
+
+3. User can choose one of the following payment methods:
+
+   * Credit Card
+   * Debit Card
+   * UPI
+   * Net Banking
+
+4. For Card Payments:
+
+   * Card Number is mandatory.
+   * Card Number must contain 16 digits.
+   * Expiry Date is mandatory.
+   * CVV is mandatory and must contain 3 digits.
+   * Card holder name is mandatory.
+
+5. Expired cards should not be accepted.
+
+6. Payment should be processed only after successful validation of all mandatory fields.
+
+7. For UPI:
+
+   * User should enter a valid UPI ID.
+   * Payment request should be sent to the UPI application.
+
+8. If payment succeeds:
+
+   * Order should be created.
+   * Inventory should be updated.
+   * Confirmation email should be sent.
+   * Confirmation SMS should be sent.
+
+9. If payment fails:
+
+   * Order should not be created.
+   * User should receive a failure message.
+   * User should be allowed to retry payment.
+
+10. User should not be charged twice if the payment gateway sends duplicate success responses.
+
+11. User can cancel payment before final submission.
+
+12. Refund should be initiated automatically if payment is successful but order creation fails.
+
+Non-Functional Requirements:
+
+1. Payment processing should complete within 5 seconds under normal load.
+
+2. Payment information must be encrypted.
+
+3. Application should comply with PCI-DSS security standards.
+
+4. System should support 10,000 concurrent users.
+
+5. Payment audit logs should be maintained for all transactions.

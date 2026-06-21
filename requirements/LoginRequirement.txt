@@ -1,0 +1,7 @@
+Users should login using valid username and password.
+
+Invalid password should show an error.
+
+Account should lock after 5 failed attempts.
+
+Forgot password link should be available.

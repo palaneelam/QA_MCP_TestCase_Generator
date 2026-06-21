@@ -1,0 +1,58 @@
+Online User Registration Module
+
+Business Requirement:
+
+The application should allow new users to create an account.
+
+Functional Requirements:
+
+1. User should provide the following mandatory information:
+
+   * First Name
+   * Last Name
+   * Email Address
+   * Password
+   * Confirm Password
+
+2. First Name and Last Name should accept only alphabetic characters.
+
+3. Email Address must be unique in the system.
+
+4. Email Address should follow a valid email format.
+
+5. Password must satisfy the following conditions:
+
+   * Minimum 8 characters
+   * Maximum 20 characters
+   * At least 1 uppercase letter
+   * At least 1 lowercase letter
+   * At least 1 numeric digit
+   * At least 1 special character
+
+6. Password and Confirm Password must match.
+
+7. User must accept Terms and Conditions before registration.
+
+8. On successful registration:
+
+   * User account should be created.
+   * Verification email should be sent.
+   * User should see a success message.
+
+9. User should not be able to register using an already registered email address.
+
+10. User account should remain inactive until email verification is completed.
+
+11. Verification link should expire after 24 hours.
+
+12. User can request a new verification email if the previous link expires.
+
+Non-Functional Requirements:
+
+1. Registration should complete within 3 seconds.
+
+2. Sensitive information must be transmitted securely using HTTPS.
+
+3. Password should never be displayed in plain text.
+
+4. Application should support Chrome, Edge, and Firefox browsers.
