@@ -1,5 +1,13 @@
 # QA MCP Test Case Generator
 
+![Python](https://img.shields.io/badge/Python-3.12+-blue)
+![FastMCP](https://img.shields.io/badge/FastMCP-3.4.2-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![AI](https://img.shields.io/badge/AI-GitHub%20Models-purple)
+
+# QA MCP Test Case Generator
+
 > An AI-powered **QA Test Case Generator** built using **Python**, **FastMCP**, **GitHub Models API**, and **Excel Reporting**.
 
 This project demonstrates how the **Model Context Protocol (MCP)** can be used to build AI-powered QA assistants that automatically read software requirements and generate:
